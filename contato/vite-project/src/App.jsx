@@ -1,7 +1,11 @@
-import ContatoPage from './pages/Contato'
+import SobreNos from './pages/SobreNos';
 
 function App() {
-  return <ContatoPage />
+  return (
+    <div>
+      <SobreNos />
+    </div>
+  );
 }
 
-export default App
+export default App;
