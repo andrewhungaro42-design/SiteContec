@@ -1,4 +1,6 @@
 import React from 'react';
+import imagemCristiano from '../assets/imagem Cristiano.jpeg';
+import imagemTatyane from '../assets/imagem Tatyane.jpeg';
 
 export default function SobreNos() {
   return (
@@ -75,7 +77,11 @@ export default function SobreNos() {
             {/* Membro 1: Cristiano */}
             <div className="flex flex-col items-center">
               <div className="w-40 h-40 bg-gray-100 rounded-full mb-4 flex items-center justify-center text-gray-400 overflow-hidden shadow-md border-4 border-blue-100">
-                <span className="text-sm px-4">Espaço para foto do Rosto</span>
+                <img 
+                  src={imagemCristiano} 
+                  alt="Cristiano Vieira" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl font-bold text-gray-800">Cristiano Vieira</h3>
               <p className="text-blue-500 font-semibold text-lg">Presidente</p>
@@ -84,7 +90,11 @@ export default function SobreNos() {
             {/* Membro 2: Tatyane */}
             <div className="flex flex-col items-center">
               <div className="w-40 h-40 bg-gray-100 rounded-full mb-4 flex items-center justify-center text-gray-400 overflow-hidden shadow-md border-4 border-blue-100">
-                <span className="text-sm px-4">Espaço para foto do Rosto</span>
+                <img 
+                  src={imagemTatyane} 
+                  alt="Tatyane Almeida" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl font-bold text-gray-800">Tatyane Almeida</h3>
               <p className="text-blue-500 font-semibold text-lg">Vice-Presidente</p>
@@ -93,9 +103,7 @@ export default function SobreNos() {
           </div>
           
           {/* Foto da Ação */}
-          <div className="mt-12 bg-gray-100 rounded-2xl h-64 flex items-center justify-center text-gray-500 italic shadow-inner border-2 border-dashed border-gray-300">
-            [ Espaço para a foto da equipe/voluntários em ação de rua ]
-          </div>
+          
         </section>
 
       </div>
