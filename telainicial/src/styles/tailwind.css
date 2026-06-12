@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utility defaults for the landing page */
+@layer base {
+  html, body {
+    @apply m-0 p-0 w-full;
+  }
+  body {
+    @apply bg-white antialiased;
+  }
+}
+
+@layer components {
+  .container-max {
+    @apply max-w-6xl mx-auto px-6;
+  }
+}
