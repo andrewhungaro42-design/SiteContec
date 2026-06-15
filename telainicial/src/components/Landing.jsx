@@ -5,7 +5,7 @@ import qrImg from '../assets/QR Code Placeholder.png'
 import pixLogo from '../assets/Pix Logo.png'
 import copyImg from '../assets/Copy Paste.png'
 import heartImg from '../assets/heart on hand.png'
-import footballImg from '../assets/football.jpg'
+import footballImg from '../assets/football.png'
 import childrenImg from '../assets/children.png'
 
 export default function Landing() {
@@ -38,7 +38,7 @@ export default function Landing() {
 
           <div className="lg:col-span-1 flex justify-end">
             <div className="w-full max-w-sm">
-              <img src={heroImg} alt="Imagem ilustrativa" className="w-full h-72 object-cover rounded-lg" />
+              <img src={heroImg} alt="Imagem ilustrativa" className="w-full h-auto object-contain rounded-lg" />
             </div>
           </div>
         </section>
@@ -59,24 +59,6 @@ export default function Landing() {
             <div className="p-4 border rounded-md flex flex-col items-center">
               <img src={childrenImg} alt="Valores" className="h-12 w-12 object-contain" />
               <p className="text-sm text-gray-600 mt-2 text-center">Nosso comprometimento é plantar esperança, fortalecer famílias e mostrar que todo menino e toda menina merecem oportunidades para crescer com dignidade, amor e propósito.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="projetos" className="mt-10">
-          <h3 className="text-2xl font-semibold">Projetos Futuros</h3>
-          <p className="mt-4 text-gray-600">Resumo dos projetos (espaço para imagens e descrições no futuro).</p>
-
-          <div className="mt-6 grid md:grid-cols-2 gap-6">
-            <div className="p-4 border rounded-md">
-              <div className="h-40 bg-gray-100 flex items-center justify-center text-gray-400">Imagem do projeto (placeholder)</div>
-              <h4 className="mt-4 font-semibold">Projeto A</h4>
-              <p className="text-sm text-gray-600 mt-2">Breve resumo do projeto A.</p>
-            </div>
-            <div className="p-4 border rounded-md">
-              <div className="h-40 bg-gray-100 flex items-center justify-center text-gray-400">Imagem do projeto (placeholder)</div>
-              <h4 className="mt-4 font-semibold">Projeto B</h4>
-              <p className="text-sm text-gray-600 mt-2">Breve resumo do projeto B.</p>
             </div>
           </div>
         </section>
