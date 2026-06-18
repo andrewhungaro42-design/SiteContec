@@ -59,7 +59,7 @@ export default function ProjetosFuturos() {
     <div>
       {/* ─── HERO ─── */}
       <section
-        className="relative py-24 px-4 text-white overflow-hidden"
+        className="relative py-16 sm:py-20 md:py-24 px-4 text-white overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #4db870 0%, #3a9458 60%, #1a6e3c 100%)' }}
       >
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -69,12 +69,12 @@ export default function ProjetosFuturos() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1
-            className="text-5xl md:text-6xl lg:text-7xl mb-4"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4"
             style={{ fontFamily: "'Fredoka One', cursive" }}
           >
             Projetos Futuros
           </h1>
-          <p className="text-xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
+          <p className="text-base sm:text-xl" style={{ color: 'rgba(255,255,255,0.8)' }}>
             Conheça as iniciativas que estamos planejando para expandir nosso impacto.
           </p>
         </div>
@@ -87,27 +87,27 @@ export default function ProjetosFuturos() {
       </section>
 
       {/* ─── GRID DE PROJETOS ─── */}
-      <section className="py-20" style={{ backgroundColor: '#f0f4ff' }}>
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-14">
-            <div className="text-6xl mb-4">🌱</div>
+      <section className="py-14 sm:py-20" style={{ backgroundColor: '#f0f4ff' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-14">
+            <div className="text-5xl sm:text-6xl mb-4">🌱</div>
             <h2
-              className="text-4xl md:text-5xl mb-3"
+              className="text-3xl sm:text-4xl md:text-5xl mb-3"
               style={{ fontFamily: "'Fredoka One', cursive", color: '#1a1a2e' }}
             >
               Novidades em Breve!
             </h2>
-            <p className="text-lg max-w-xl mx-auto" style={{ color: '#6b7280' }}>
+            <p className="text-base sm:text-lg max-w-xl mx-auto" style={{ color: '#6b7280' }}>
               Estamos trabalhando em novos projetos para ampliar nosso alcance e impactar
               ainda mais vidas em Juiz de Fora. Fique ligado!
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {planos.map(({ icon, title, desc, tag, tagColor, tagBg }) => (
               <div
                 key={title}
-                className="rounded-2xl p-6 shadow-sm transition-all duration-200"
+                className="rounded-2xl p-5 sm:p-6 shadow-sm transition-all duration-200"
                 style={{ backgroundColor: '#ffffff', opacity: 0.75 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.opacity = '1'
@@ -118,9 +118,9 @@ export default function ProjetosFuturos() {
                   e.currentTarget.style.boxShadow = ''
                 }}
               >
-                <div className="text-4xl mb-4">{icon}</div>
+                <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{icon}</div>
                 <h3
-                  className="text-xl mb-2"
+                  className="text-lg sm:text-xl mb-2"
                   style={{ fontFamily: "'Fredoka One', cursive", color: '#1a1a2e' }}
                 >
                   {title}
@@ -138,7 +138,7 @@ export default function ProjetosFuturos() {
             ))}
           </div>
 
-          <p className="text-center mt-12 text-sm" style={{ color: '#9ca3af' }}>
+          <p className="text-center mt-10 sm:mt-12 text-sm" style={{ color: '#9ca3af' }}>
             Quer apoiar um projeto específico? Entre em{' '}
             <Link to="/contato" className="font-bold no-underline" style={{ color: '#3d8fd1' }}>
               contato conosco
@@ -149,7 +149,7 @@ export default function ProjetosFuturos() {
       </section>
 
       {/* ─── ADMIN BUTTON ─── */}
-      <section className="bg-white py-14">
+      <section className="bg-white py-10 sm:py-14">
         <div className="max-w-4xl mx-auto px-4 flex flex-col items-center gap-4">
           <p className="text-sm" style={{ color: '#9ca3af' }}>
             Área restrita para a equipe da ONG
@@ -157,7 +157,7 @@ export default function ProjetosFuturos() {
 
           <button
             onClick={() => setShowAdminInfo(!showAdminInfo)}
-            className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200"
+            className="flex items-center gap-2 px-5 sm:px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200"
             style={{
               border: '2px dashed #d1d5db',
               color: '#9ca3af',
@@ -180,7 +180,7 @@ export default function ProjetosFuturos() {
 
           {showAdminInfo && (
             <div
-              className="max-w-sm w-full rounded-2xl p-6 text-left"
+              className="max-w-sm w-full rounded-2xl p-5 sm:p-6 text-left"
               style={{
                 backgroundColor: '#f0f4ff',
                 border: '1.5px solid rgba(61,143,209,0.2)',

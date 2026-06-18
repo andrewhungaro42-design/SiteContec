@@ -80,36 +80,36 @@ export default function Home() {
           }}
         />
 
-        <div className="max-w-6xl mx-auto px-4 py-20 w-full grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 w-full grid lg:grid-cols-2 gap-10 items-center">
           {/* Text */}
           <div className="text-white">
             <div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-5"
               style={{ background: 'rgba(255,255,255,0.12)', backdropFilter: 'blur(8px)' }}
             >
               🌟 ONG Social — Juiz de Fora, MG
             </div>
 
             <h1
-              className="text-5xl md:text-6xl lg:text-7xl leading-tight mb-5"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-4"
               style={{ fontFamily: "'Fredoka One', cursive", color: '#ffffff' }}
             >
               Sonho de um Menino
             </h1>
 
-            <p className="text-xl md:text-2xl font-bold mb-4" style={{ color: 'rgba(255,255,255,0.85)' }}>
+            <p className="text-lg sm:text-xl md:text-2xl font-bold mb-3" style={{ color: 'rgba(255,255,255,0.85)' }}>
               Construindo o futuro, peça por peça!
             </p>
 
-            <p className="text-lg leading-relaxed mb-10" style={{ color: 'rgba(255,255,255,0.65)' }}>
+            <p className="text-base sm:text-lg leading-relaxed mb-8" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Transformamos vidas através do amor, do esporte e da solidariedade.
               Apoio social nas ruas e escolinha de futebol para crianças e adolescentes.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 to="/contato"
-                className="px-8 py-4 rounded-2xl text-base font-bold no-underline transition-all duration-200"
+                className="px-6 sm:px-8 py-3 sm:py-4 rounded-2xl text-base font-bold no-underline transition-all duration-200 text-center"
                 style={{ background: '#f5a623', color: '#1a1a2e' }}
                 onMouseEnter={e => (e.currentTarget.style.background = '#d4891a')}
                 onMouseLeave={e => (e.currentTarget.style.background = '#f5a623')}
@@ -118,7 +118,7 @@ export default function Home() {
               </Link>
               <Link
                 to="/sobre"
-                className="px-8 py-4 rounded-2xl text-base font-bold no-underline transition-all duration-200"
+                className="px-6 sm:px-8 py-3 sm:py-4 rounded-2xl text-base font-bold no-underline transition-all duration-200 text-center"
                 style={{
                   background: 'rgba(255,255,255,0.12)',
                   color: '#ffffff',
@@ -134,7 +134,7 @@ export default function Home() {
           </div>
 
           {/* Hero image */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end mt-4 lg:mt-0">
             <img
               src={heroImg}
               alt="Sonho de um Menino"
@@ -153,8 +153,8 @@ export default function Home() {
       </section>
 
       {/* ─── STATS ─── */}
-      <section className="bg-white py-14">
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <section className="bg-white py-10 sm:py-14">
+        <div className="max-w-xs sm:max-w-sm mx-auto px-4 grid grid-cols-2 gap-6">
           {stats.map(({ num, label }) => (
             <div key={label} className="text-center py-4">
               <div
@@ -172,11 +172,11 @@ export default function Home() {
       </section>
 
       {/* ─── MISSION CARDS ─── */}
-      <section className="py-20" style={{ backgroundColor: '#f0f4ff' }}>
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
+      <section className="py-14 sm:py-20" style={{ backgroundColor: '#f0f4ff' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12">
             <h2
-              className="text-4xl md:text-5xl"
+              className="text-3xl sm:text-4xl md:text-5xl"
               style={{ fontFamily: "'Fredoka One', cursive", color: '#1a1a2e' }}
             >
               O Que Fazemos
@@ -217,11 +217,11 @@ export default function Home() {
       </section>
 
       {/* ─── DONATION ─── */}
-      <section className="bg-white py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="text-center mb-14">
+      <section className="bg-white py-14 sm:py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-14">
             <h2
-              className="text-4xl md:text-5xl"
+              className="text-3xl sm:text-4xl md:text-5xl"
               style={{ fontFamily: "'Fredoka One', cursive", color: '#1a1a2e' }}
             >
               Faça Sua Doação
@@ -268,7 +268,7 @@ export default function Home() {
                 }}
               >
                 <span
-                  className="font-mono text-xl font-bold"
+                  className="font-mono text-sm sm:text-lg font-bold min-w-0 truncate"
                   style={{ color: '#1a1a2e' }}
                 >
                   {PIX_CNPJ}
@@ -318,12 +318,12 @@ export default function Home() {
 
       {/* ─── CTA BANNER ─── */}
       <section
-        className="py-20"
+        className="py-14 sm:py-20"
         style={{ background: 'linear-gradient(135deg, #3d8fd1 0%, #2e6fa3 100%)' }}
       >
-        <div className="max-w-4xl mx-auto px-4 text-center text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
           <h2
-            className="text-4xl md:text-5xl mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl mb-4"
             style={{ fontFamily: "'Fredoka One', cursive" }}
           >
             Junte-se a Esse Sonho!
@@ -331,10 +331,10 @@ export default function Home() {
           <p className="text-lg mb-10" style={{ color: 'rgba(255,255,255,0.75)' }}>
             Conheça nossa história e descubra como você pode fazer parte dessa transformação.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
             <Link
               to="/sobre"
-              className="px-8 py-4 rounded-2xl font-bold no-underline transition-all duration-200"
+              className="px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold no-underline transition-all duration-200 text-center"
               style={{ backgroundColor: '#ffffff', color: '#3d8fd1' }}
               onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#f0f4ff')}
               onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#ffffff')}
@@ -343,7 +343,7 @@ export default function Home() {
             </Link>
             <Link
               to="/contato"
-              className="px-8 py-4 rounded-2xl font-bold no-underline transition-all duration-200"
+              className="px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold no-underline transition-all duration-200 text-center"
               style={{ backgroundColor: '#f5a623', color: '#1a1a2e' }}
               onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#d4891a')}
               onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#f5a623')}
