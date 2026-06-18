@@ -1,0 +1,6 @@
+src/
+contato/
+node_modules/
+.git/
+*.md
+*.zip
